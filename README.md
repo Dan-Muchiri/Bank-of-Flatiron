@@ -2,13 +2,15 @@
 
 ## Description
 
-This is a React application that displays a list of recent bank transactions. It allows users to add new transactions, search for transactions, and more.
+This is a React application that displays a list of recent bank transactions. It allows users to add new transactions, search for transactions, and more. In addition to the basic features, recent updates include sorting transactions alphabetically and the ability to delete transactions.
 
 ## Features
 
 - See a table of all transactions.
 - Fill out and submit the form to add a new transaction.
 - Filter transactions by typing into the search bar.
+- Sort transactions alphabetically by category or description.
+- Delete a transaction, which removes it from the table.
 
 ## Usage
 
@@ -19,4 +21,3 @@ This is a React application that displays a list of recent bank transactions. It
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
-

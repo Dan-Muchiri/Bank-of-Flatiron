@@ -33,12 +33,19 @@ function App() {
     setFilteredTransactions(filtered);
   };
 
+  const handleDeleteTransaction = (id) => {
+    const updatedTransactions = transactions.filter((transaction) => transaction.id !== id);
+    setTransactions(updatedTransactions);
+    setFilteredTransactions(updatedTransactions);
+  };
+
   return (
     <div className="container">
       <h1>Bank of Flatiron</h1>
       <SearchBar onSearch={handleSearch} />
       <TransactionForm onAddTransaction={handleAddTransaction} />
-      <TransactionTable transactions={filteredTransactions} />
+      <TransactionTable transactions={filteredTransactions} onDelete={handleDeleteTransaction} />
+
     </div>
   );
 }
